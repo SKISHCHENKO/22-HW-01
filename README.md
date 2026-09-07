@@ -112,7 +112,7 @@ SSH к приватной VM выполняется через `public-vm` ка�
 | [`cloud-config.yml`](cloud-config.yml) | Установка `curl` на Ubuntu VM |
 | [`env-yc.sh`](env-yc.sh) | Получение временного IAM token через `yc` |
 | [`check.sh`](check.sh) | Автоматическая проверка задания после `terraform apply` |
-| [`img/README.md`](img/README.md) | Список рекомендуемых скриншотов для отчёта |
+
 
 ---
 
@@ -440,7 +440,6 @@ terraform output -raw nat_public_ip
 
 На скриншоте  `curl -4 https://ifconfig.co/ip` на `private-vm` и значение `terraform output -raw nat_public_ip` на локальной машине. Эти адреса совпадают.
 
-Файл скриншота: [`img/08-private-vm-internet-via-nat.png`](img/08-private-vm-internet-via-nat.png).
 
 
 ---
