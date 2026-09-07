@@ -559,12 +559,6 @@ nat = false
 terraform destroy
 ```
 
-Подтвердить:
-
-```text
-yes
-```
-
 После удаления проверить:
 
 ```bash
@@ -573,21 +567,3 @@ yc vpc network list
 ```
 
 ---
-
-
-## Итог
-
-Terraform-код создаёт инфраструктуру, полностью соответствующую заданию:
-
-```text
-VPC: hw-nat-vpc
-├── public  192.168.10.0/24
-│   ├── public-vm    192.168.10.10 + public IP
-│   └── nat-instance 192.168.10.254 + public IP
-│
-└── private 192.168.20.0/24
-    └── private-vm   192.168.20.10, без public IP
-
-private route:
-0.0.0.0/0 -> 192.168.10.254
-```
