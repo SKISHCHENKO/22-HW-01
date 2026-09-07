@@ -1,0 +1,26 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state: не коммитить в Git
+*.tfstate
+*.tfstate.*
+
+# Saved plans
+*.tfplan
+tfplan
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Credentials / local secrets
+authorized_key.json
+key.json
+*.pem
+.env
